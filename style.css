@@ -1,49 +1,156 @@
-/********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
-* 
-* License: [license name - e.g. MIT if you want to let others
-* use the design with attribution, or All Rights Reserved if you
-* don't want others to use the design]
-* 
-* Acknowledgments/Sources:
-* - 
-* - 
-* -
-*/
-
-/* Starter code -- feel free to delete */
-
-/* Typography */
-
-/* Get your own import URL from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-.page-wrapper {
-  /* Main font */
-  font-family: Poppins, sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Header font */
-  font-family: "Dancing Script", cursive;
+/* General body styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #222; /* Dark gray background */
+  color: #f1f1f1; /* Light text color */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-/* Background */
-#css-zen-garden {
-  background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
-}
 /* Page wrapper */
 .page-wrapper {
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ccc;
-  padding: 1em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  transform: scale(1.3);
+  transition: transform 0.1s ease-in-out;
+}
+
+header:hover {
+  transform: scale(1.5);
+}
+
+h1 {
+  font-family: "Racing Sans One", sans-serif;
+  font-size: 48px;
+  color: #ffcc00; /* Keep the golden color for the header */
+  text-transform: uppercase;
+}
+
+/* Removing blur effect from header animation */
+header {
+  animation: none; /* No animations applied */
+}
+
+.iacs {
+  color: #0033a0;
+  text-shadow: 3px 3px 3px #c6093b;
+}
+
+h2 {
+  color: #c6093b; /* Dark red for subtitles */
+  font-weight: 500;
+}
+
+/* Paragraphs and text formatting */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #333; /* Slightly darker background for text blocks */
+  border: 1px solid #fff; /* White border for text blocks */
+  border-radius: 5px;
+}
+
+/* Boxes */
+div {
+  animation-name: blur-in;
+  animation-duration: 1ms;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid #fff; /* White border for all boxes */
+  border-radius: 8px; /* Slight rounding for a modern look */
+  background-color: #444; /* Medium gray background */
+}
+
+/* Keyframes for scroll animations */
+@keyframes blur-in {
+  0% {
+    scale: 0.8;
+    opacity: 0.8;
+    filter: none; /* Removed blur */
+  }
+  20%,
+  70% {
+    scale: 1;
+    opacity: 1;
+    filter: none;
+    background-color: #555; /* Slightly darker gray during the animation */
+  }
+  100% {
+    background-color: #666; /* Final state of the animation */
+  }
+}
+
+/* Sidebar and other sections */
+aside {
+  background-color: #333;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Adding spacing to all UL elements */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  border-top: 1px solid #fff;
+}
+
+/* Scroll progress line */
+.scroll-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  transition: width 0.3s ease-out;
+  z-index: 1000;
+}
+
+/* Keyframes for animated gradient background */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
