@@ -16,41 +16,41 @@
 
 /* General Styles */
 body {
-  background-image: url('fall-forest.jpg');
+  background-image: url("fall-forest.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #4A403A;
-  font-family: 'Aldrich', sans-serif;
+  color: #4a403a;
+  font-family: "Aldrich", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #D35400;
+  color: #d35400;
   text-decoration: none;
 }
 
 a:hover {
-  color: #E67E22;
+  color: #e67e22;
 }
 
 /* Header Styles */
 header {
   background-color: rgba(211, 84, 0, 0.8);
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
-  font-family: 'Saira Stencil One', cursive;
+  font-family: "Saira Stencil One", cursive;
   font-size: 2.5em;
   margin: 0;
 }
 
 header h2 {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 1.5em;
   margin: 10px 0 0;
 }
@@ -64,7 +64,7 @@ section {
 }
 
 section h3 {
-  font-family: 'Saira Stencil One', cursive;
+  font-family: "Saira Stencil One", cursive;
   font-size: 2em;
   margin-top: 0;
 }
@@ -75,8 +75,8 @@ section p {
 }
 
 code {
-  background-color: #FFFFFF;
-  color: #D35400;
+  background-color: #ffffff;
+  color: #d35400;
   padding: 2px 4px;
   border-radius: 4px;
 }
@@ -90,12 +90,13 @@ main {
 }
 
 main h3 {
-  font-family: 'Saira Stencil One', cursive;
+  font-family: "Saira Stencil One", cursive;
   font-size: 2em;
   margin-top: 0;
 }
 
-main p, main ul {
+main p,
+main ul {
   font-size: 1em;
   line-height: 1.5;
 }
@@ -103,14 +104,14 @@ main p, main ul {
 /* Sidebar Styles */
 aside {
   background-color: rgba(211, 84, 0, 0.8);
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
 }
 
 aside h3 {
-  font-family: 'Saira Stencil One', cursive;
+  font-family: "Saira Stencil One", cursive;
   font-size: 1.5em;
   margin-top: 0;
 }
@@ -125,17 +126,17 @@ aside li {
 }
 
 aside a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 aside a:hover {
-  color: #FAF3E0;
+  color: #faf3e0;
 }
 
 /* Footer Styles */
 footer {
   background-color: rgba(211, 84, 0, 0.8);
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   padding: 10px 0;
 }
@@ -150,7 +151,7 @@ footer {
 }
 
 h4 {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 1.25em;
   margin-top: 20px;
 }
